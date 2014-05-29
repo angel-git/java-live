@@ -1,0 +1,10 @@
+public class SpringExecutor implements Executor {
+
+    private WebApplicationContext ctx;
+
+    public SpringExecutor(ServletContext servletContext) {
+        this.ctx = WebApplicationContextUtils.getWebApplicationContext((servletContext));
+    }
+
+    @Override
+    public void executeCode() {

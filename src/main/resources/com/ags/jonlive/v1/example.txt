@@ -1,0 +1,4 @@
+import com.ags.jonlive.service.HelloService;
+
+
+ctx.getBean("helloService", HelloService.class).saySomething("test hello");
